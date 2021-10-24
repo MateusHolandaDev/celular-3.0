@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src='js/script.js' defer></script> 
+    <title>Projeto JavaScript e Jquery</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-nome">
+            <h1>Minha Loja</h1>
+        </div>
+    </header>
+
+    <main>
+       
+        <section class="container-cadastro">
+            <h3>CADASTRO</h3>
+            <div class="input-cadastro">
+                <label>Produto:</label>
+                <input type="text" id="nomeProduto" placeholder="Nome do produto"></input>
+            </div>
+            <div class="input-cadastro">
+                <label>Preço:</label>
+                <input type="text" id="precoProduto" placeholder="Preço do produto"></input>
+            </div>
+            <div class="input-cadastro">
+                <label>Fornecedor:</label>
+                <input type="text" id="fornecedor" placeholder="Fornecedor do produto"></input>
+            </div>
+            <div class="input-cadastro">
+                <label>Quantidade:</label>
+                <input type="text" id="quantidade" placeholder="Fornecedor do produto"></input>
+            </div>
+            <button id="btn1" onclick="produto.salvar()">Salvar</button>
+            <button id="btn2" onclick="produto.cancelar()">Cancelar</button>
+        </section>
+        <section class="conteudo">
+            <table>
+                <thead>
+                    <th class="center">ID</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Fornecedor</th>
+                    <th id="qtd">Quantidade</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+</body>
+
+</html>
